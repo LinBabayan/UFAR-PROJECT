@@ -1,5 +1,3 @@
-# UFAR-PROJECT
-
 
 import random     
 import sys 
@@ -34,7 +32,7 @@ def diceNumber():
 # function to get dice sum 
 def twoDice(dices):
     die1, die2 = dices
-    print("The sum of dice is {} + {} = {}".format(die1, die2, sum(dices)))
+    print("The sum of dice {} + {} = {}".format(die1, die2, sum(dices)))
  
  
 # call  diceNumber to get value return the roll and then store that in value.
@@ -47,7 +45,7 @@ sum_of_dices = sum(value)
  
 # find if sum of dices is 7 or 11 
 if sum_of_dices in (7, 11):
-    result = "congratulations, you won"
+    result = "congratulations you won"
  
 # find if sum of dices is 2 , 3 , 12 
 elif sum_of_dices in (2, 3, 12):
@@ -79,17 +77,3 @@ if result == "congratulations you won":
      
 else:
     print("you lost, \ntry again next time")
-
-
-    import time 
-
-my_time = int(input("Enter time in seconds: "))
-
-for x in range (my_time, 0, -1):
-    seconds = x % 60
-    minutes = int(x / 60) % 60
-    hours = int(x / 3600)
-    print(f"{hours:02}:{minutes:02}:{seconds:02}")
-    time.sleep(1)
-
-print("TIME IS UP!")
